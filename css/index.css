@@ -41,6 +41,7 @@ input[type="textfield"] {
   text-align: center;
   width: 50%;
   height: 20px;
+  length: 300px;
 }
 
 .calcTable {
@@ -61,13 +62,8 @@ input[type="textfield"] {
 }
 
 .panel {
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-    color: white;
-    height: 100%;
-    text-align: center;
     display: table;
     margin: 0;
-    background: #1c1c1c;
     padding: 0 0;
 }
 
@@ -90,28 +86,28 @@ input[type="textfield"] {
 }
 
 #back1 {
-    background: url("https://pixabay.com/get/e832b50f21f3023ecd1f4603e148459ee76ae3d11eb8154693f0c671/river-1740973.jpg") no-repeat center;
+    background: url("http://i.imgur.com/0hlSJaQ.png") no-repeat center;
     background-size: cover;
 
 }
 
 #back2 {
-    background: url("https://pixabay.com/get/ea30b00d2ef21c3e95594302e24f4e92fe76e6d210b5164794f2c2/pyrenees-351266.jpg") no-repeat center;
+    background: url("http://i.imgur.com/VUztXi7.png") no-repeat center;
     background-size: cover;
 }
 
 #back3 {
-    background: url("https://pixabay.com/get/e831b50f2af3033ecd1f4603e148459ee76ae3d11eb8154693f1c271/beach-1440272.jpg") no-repeat center;
+    background: url("http://i.imgur.com/8kiFrPw.png") no-repeat center;
     background-size: cover;
 }
 
 #back4 {
-    background: url("https://pixabay.com/get/e835b60d20f6093ecd1f4603e148459ee76ae3d11eb8154693f1c471/green-1072828.jpg") no-repeat center;
+    background: url("http://i.imgur.com/XiFd5wI.jpg") no-repeat center;
     background-size: cover;
 }
 
 #back5 {
-    background: url("https://pixabay.com/get/e83db10d2bf7063ecd1f4603e148459ee76ae3d11eb8154693f1c67c/landscape-1802337.jpg") no-repeat center;
+    background: url("http://i.imgur.com/6iCEMm7.png") no-repeat center;
     background-size: cover;
 }
 

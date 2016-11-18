@@ -2,9 +2,9 @@
 <html>
 <head>
   <title>Calculator</title>
-  <link rel="stylesheet" style="text/css" href="../css/index.css"></link>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.7.0/math.js"></script>
   <script src="../js/index.js"></script>
-  <script src="../js/math.js"></script>
+  <link rel="stylesheet" style="text/css" href="../css/index.css"></link>
 </head>
 <body>
   <div id="home" class="panel">
@@ -19,7 +19,7 @@
     </div>
     <div class="calcTable">
       <form name="calc">
-        <input type="textfield" name="ans" id="ans" value="">
+        <input type="textfield" name="ans" id="ans" value="" readonly/>
         <table style="text-align: center;">
           <tr>
             <td><input type="button" value="C" onClick="document.calc.ans.value=''"></td>
