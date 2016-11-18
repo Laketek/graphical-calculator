@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" style="text/css" href="../css/index.css"></link>
+  <script src="../js/index.js"></script>
+  <script src="../js/math.js"></script>
+</head>
+<body>
+  <div id="home" class="panel">
+    <div class="inner">
+      <div id="backgroundchange">
+        <div class="backgroundimg" id="back1"></div>
+        <div class="backgroundimg" id="back2"></div>
+        <div class="backgroundimg" id="back3"></div>
+        <div class="backgroundimg" id="back4"></div>
+        <div class="backgroundimg" id="back5"></div>
+      </div>
+    </div>
+    <div class="calcTable">
+      <form name="calc">
+        <input type="textfield" name="ans" id="ans" value="">
+        <table style="text-align: center;">
+          <tr>
+            <td><input type="button" value="C" onClick="document.calc.ans.value=''"></td>
+            <td><input type="button" value="(" onClick="document.calc.ans.value+='('"></td>
+            <td><input type="button" value=")" onClick="document.calc.ans.value+=')'"></td>
+            <td><input type="button" value="←" onClick="backspace()"></td>
+            <td><input type="button" value="sin" onClick="document.calc.ans.value+='sin('"></td>
+            <td><input type="button" value="sin-1" onClick="document.calc.ans.value+='asin('"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" onClick="document.calc.ans.value+='7'"></td>
+            <td><input type="button" value="8" onClick="document.calc.ans.value+='8'"></td>
+            <td><input type="button" value="9" onClick="document.calc.ans.value+='9'"></td>
+            <td><input type="button" value="+" onClick="document.calc.ans.value+='+'"></td>
+            <td><input type="button" value="cos" onClick="document.calc.ans.value+='cos('"></td>
+            <td><input type="button" value="cos-1" onClick="document.calc.ans.value+='acos('"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" onClick="document.calc.ans.value+='4'"></td>
+            <td><input type="button" value="5" onClick="document.calc.ans.value+='5'"></td>
+            <td><input type="button" value="6" onClick="document.calc.ans.value+='6'"></td>
+            <td><input type="button" value="-" onClick="document.calc.ans.value+='-'"></td>
+            <td><input type="button" value="tan" onClick="document.calc.ans.value+='tan('"></td>
+            <td><input type="button" value="tan-1" onClick="document.calc.ans.value+='atan('"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1" onClick="document.calc.ans.value+='1'"></td>
+            <td><input type="button" value="2" onClick="document.calc.ans.value+='2'"></td>
+            <td><input type="button" value="3" onClick="document.calc.ans.value+='3'"></td>
+            <td><input type="button" value="*" onClick="document.calc.ans.value+='*'"></td>
+            <td><input type="button" value="π" onClick="document.calc.ans.value+='pi'"></td>
+            <td><input type="button" value="log" onClick="document.calc.ans.value+='log('"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="0" onclick="document.calc.ans.value+='0'"></td>
+            <td><input type="button" value="." onClick="document.calc.ans.value+='.'"></td>
+            <td><input type="button" value="=" onClick="evalAnswer()"></td>
+            <td><input type="button" value="/" onClick="document.calc.ans.value+='/'"></td>
+            <td><input type="button" value="^" onClick="document.calc.ans.value+='^'"></td>
+            <td><input type="button" value="!" onClick="document.calc.ans.value+='!'"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
