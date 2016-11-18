@@ -3,7 +3,9 @@ function backspace() {
 }
 
 function evalAnswer() {
-  document.getElementById("ans").value = math.eval(document.getElementById("ans").value);
+  if(document.getElementById("ans").value.length > 0) {
+    document.getElementById("ans").value = math.eval(document.getElementById("ans").value);
+  }
 }
 
 document.addEventListener('keypress', function(event) {
