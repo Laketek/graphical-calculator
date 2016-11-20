@@ -3,9 +3,10 @@
 <head>
   <title>Calculator</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.7.0/math.js"></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <script src="../js/index.js"></script>
-  <link rel="stylesheet" style="text/css" href="../css/index.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+  <link rel="stylesheet" style="text/css" href="../css/index.css">
 </head>
 <body>
   <div id="home" class="panel">
@@ -18,7 +19,7 @@
         <div class="backgroundimg" id="back5"></div>
       </div>
     </div>
-    <div class="calcTable">
+    <div class="calcTable" id="calcTable">
       <form name="calc">
         <input type="text" name="ans" id="ans" value="" readonly/>
         <table style="text-align: center;">
@@ -65,6 +66,10 @@
         </table>
       </form>
     </div>
+    <form>
+      <input type="radio" name="radioButton" id="scientificButton" value="Scientific" checked><br>
+      <input type="radio" name="radioButton" id="standardButton" value="Standard">
+    </form>
   </div>
 </body>
 </html>

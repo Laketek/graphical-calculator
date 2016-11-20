@@ -58,6 +58,10 @@ input[type="text"] {
   margin-top: 15px;
 }
 
+input[name="radioButton"] {
+  position: absolute;
+}
+
 .panel {
     display: table;
     margin: 0;

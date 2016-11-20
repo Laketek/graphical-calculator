@@ -23,3 +23,12 @@ document.addEventListener('keydown', function(event) {
     backspace();
   }
 });
+
+$(document).ready(function () {
+  $('#scientificButton').click(function () {
+    $('#calcTable').show();
+  });
+  $('#standardButton').click(function () {
+    $('#calcTable').hide();
+  });
+});
