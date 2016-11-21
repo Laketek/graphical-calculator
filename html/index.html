@@ -19,57 +19,98 @@
         <div class="backgroundimg" id="back5"></div>
       </div>
     </div>
-    <div class="calcTable" id="calcTable">
-      <form name="calc">
-        <input type="text" name="ans" id="ans" value="" readonly/>
-        <table style="text-align: center;">
+    <div class="calcTable" id="calcTable1">
+      <form name="scientificCalc">
+        <input type="text" name="ans1" id="ans1" value="" readonly/>
+        <table id="scientificTable">
           <tr>
-            <td><input type="button" value="C" onClick="document.calc.ans.value=''"></td>
-            <td><input type="button" value="(" onClick="document.calc.ans.value+='('"></td>
-            <td><input type="button" value=")" onClick="document.calc.ans.value+=')'"></td>
-            <td><input type="button" value="←" onClick="backspace()"></td>
-            <td><input type="button" value="sin" onClick="document.calc.ans.value+='sin('"></td>
-            <td><input type="button" value="sin-1" onClick="document.calc.ans.value+='asin('"></td>
+            <td><input type="button" class="button1" value="C" onClick="document.scientificCalc.ans1.value=''"></td>
+            <td><input type="button" class="button1" value="(" onClick="document.scientificCalc.ans1.value+='('"></td>
+            <td><input type="button" class="button1" value=")" onClick="document.scientificCalc.ans1.value+=')'"></td>
+            <td><input type="button" class="button1" value="←" onClick="backspace()"></td>
+            <td><input type="button" class="button1" value="sin" onClick="document.scientificCalc.ans1.value+='sin('"></td>
+            <td><input type="button" class="button1" value="sin-1" onClick="document.scientificCalc.ans1.value+='asin('"></td>
           </tr>
           <tr>
-            <td><input type="button" value="7" onClick="document.calc.ans.value+='7'"></td>
-            <td><input type="button" value="8" onClick="document.calc.ans.value+='8'"></td>
-            <td><input type="button" value="9" onClick="document.calc.ans.value+='9'"></td>
-            <td><input type="button" value="+" onClick="document.calc.ans.value+='+'"></td>
-            <td><input type="button" value="cos" onClick="document.calc.ans.value+='cos('"></td>
-            <td><input type="button" value="cos-1" onClick="document.calc.ans.value+='acos('"></td>
+            <td><input type="button" class="button1" value="7" onClick="document.scientificCalc.ans1.value+='7'"></td>
+            <td><input type="button" class="button1" value="8" onClick="document.scientificCalc.ans1.value+='8'"></td>
+            <td><input type="button" class="button1" value="9" onClick="document.scientificCalc.ans1.value+='9'"></td>
+            <td><input type="button" class="button1" value="+" onClick="document.scientificCalc.ans1.value+='+'"></td>
+            <td><input type="button" class="button1" value="cos" onClick="document.scientificCalc.ans1.value+='cos('"></td>
+            <td><input type="button" class="button1" value="cos-1" onClick="document.scientificCalc.ans1.value+='acos('"></td>
           </tr>
           <tr>
-            <td><input type="button" value="4" onClick="document.calc.ans.value+='4'"></td>
-            <td><input type="button" value="5" onClick="document.calc.ans.value+='5'"></td>
-            <td><input type="button" value="6" onClick="document.calc.ans.value+='6'"></td>
-            <td><input type="button" value="-" onClick="document.calc.ans.value+='-'"></td>
-            <td><input type="button" value="tan" onClick="document.calc.ans.value+='tan('"></td>
-            <td><input type="button" value="tan-1" onClick="document.calc.ans.value+='atan('"></td>
+            <td><input type="button" class="button1" value="4" onClick="document.scientificCalc.ans1.value+='4'"></td>
+            <td><input type="button" class="button1" value="5" onClick="document.scientificCalc.ans1.value+='5'"></td>
+            <td><input type="button" class="button1" value="6" onClick="document.scientificCalc.ans1.value+='6'"></td>
+            <td><input type="button" class="button1" value="-" onClick="document.scientificCalc.ans1.value+='-'"></td>
+            <td><input type="button" class="button1" value="tan" onClick="document.scientificCalc.ans1.value+='tan('"></td>
+            <td><input type="button" class="button1" value="tan-1" onClick="document.scientificCalc.ans1.value+='atan('"></td>
           </tr>
           <tr>
-            <td><input type="button" value="1" onClick="document.calc.ans.value+='1'"></td>
-            <td><input type="button" value="2" onClick="document.calc.ans.value+='2'"></td>
-            <td><input type="button" value="3" onClick="document.calc.ans.value+='3'"></td>
-            <td><input type="button" value="*" onClick="document.calc.ans.value+='*'"></td>
-            <td><input type="button" value="π" onClick="document.calc.ans.value+='pi'"></td>
-            <td><input type="button" value="log" onClick="document.calc.ans.value+='log('"></td>
+            <td><input type="button" class="button1" value="1" onClick="document.scientificCalc.ans1.value+='1'"></td>
+            <td><input type="button" class="button1" value="2" onClick="document.scientificCalc.ans1.value+='2'"></td>
+            <td><input type="button" class="button1" value="3" onClick="document.scientificCalc.ans1.value+='3'"></td>
+            <td><input type="button" class="button1" value="*" onClick="document.scientificCalc.ans1.value+='*'"></td>
+            <td><input type="button" class="button1" value="π" onClick="document.scientificCalc.ans1.value+='pi'"></td>
+            <td><input type="button" class="button1" value="log" onClick="document.scientificCalc.ans1.value+='log('"></td>
           </tr>
           <tr>
-            <td><input type="button" value="0" onclick="document.calc.ans.value+='0'"></td>
-            <td><input type="button" value="." onClick="document.calc.ans.value+='.'"></td>
-            <td><input type="button" value="=" onClick="evalAnswer()"></td>
-            <td><input type="button" value="/" onClick="document.calc.ans.value+='/'"></td>
-            <td><input type="button" value="^" onClick="document.calc.ans.value+='^'"></td>
-            <td><input type="button" value="!" onClick="document.calc.ans.value+='!'"></td>
+            <td><input type="button" class="button1" value="0" onclick="document.scientificCalc.ans1.value+='0'"></td>
+            <td><input type="button" class="button1" value="." onClick="document.scientificCalc.ans1.value+='.'"></td>
+            <td><input type="button" class="button1" value="=" onClick="evalAnswer()"></td>
+            <td><input type="button" class="button1" value="/" onClick="document.scientificCalc.ans1.value+='/'"></td>
+            <td><input type="button" class="button1" value="^" onClick="document.scientificCalc.ans1.value+='^'"></td>
+            <td><input type="button" class="button1" value="!" onClick="document.scientificCalc.ans1.value+='!'"></td>
           </tr>
         </table>
       </form>
     </div>
-    <form>
-      <input type="radio" name="radioButton" id="scientificButton" value="Scientific" checked><br>
-      <input type="radio" name="radioButton" id="standardButton" value="Standard">
-    </form>
+    <div class="calcTable" id="calcTable2">
+      <form name="standardCalc">
+        <input type="text" name="ans2" id="ans2" value="" readonly/>
+        <table id="standardTable">
+          <tr>
+            <td><input type="button" class="button1" value="C" onClick="document.standardCalc.ans2.value=''"></td>
+            <td><input type="button" class="button1" value="(" onClick="document.standardCalc.ans2.value+='('"></td>
+            <td><input type="button" class="button1" value=")" onClick="document.standardCalc.ans2.value+=')'"></td>
+            <td><input type="button" class="button1" value="←" onClick="backspace()"></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="button1" value="7" onClick="document.standardCalc.ans2.value+='7'"></td>
+            <td><input type="button" class="button1" value="8" onClick="document.standardCalc.ans2.value+='8'"></td>
+            <td><input type="button" class="button1" value="9" onClick="document.standardCalc.ans2.value+='9'"></td>
+            <td><input type="button" class="button1" value="+" onClick="document.standardCalc.ans2.value+='+'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="button1" value="4" onClick="document.standardCalc.ans2.value+='4'"></td>
+            <td><input type="button" class="button1" value="5" onClick="document.standardCalc.ans2.value+='5'"></td>
+            <td><input type="button" class="button1" value="6" onClick="document.standardCalc.ans2.value+='6'"></td>
+            <td><input type="button" class="button1" value="-" onClick="document.standardCalc.ans2.value+='-'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="button1" value="1" onClick="document.standardCalc.ans2.value+='1'"></td>
+            <td><input type="button" class="button1" value="2" onClick="document.standardCalc.ans2.value+='2'"></td>
+            <td><input type="button" class="button1" value="3" onClick="document.standardCalc.ans2.value+='3'"></td>
+            <td><input type="button" class="button1" value="*" onClick="document.standardCalc.ans2.value+='*'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" class="button1" value="0" onclick="document.standardCalc.ans2.value+='0'"></td>
+            <td><input type="button" class="button1" value="." onClick="document.standardCalc.ans2.value+='.'"></td>
+            <td><input type="button" class="button1" value="=" onClick="evalAnswer()"></td>
+            <td><input type="button" class="button1" value="/" onClick="document.standardCalc.ans2.value+='/'"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div id="calcButtons">
+      <table id="calcButtonsTable">
+        <tr>
+          <td><input type="button" class="button2" id="standardButton" value="Standard"></td>
+          <td><input type="button" class="button2" id="scientificButton" value="Scientific" checked></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </body>
 </html>
