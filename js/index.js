@@ -1,5 +1,5 @@
 function calcCheck() {
-  if ($('#calcTable1').is(":visible") === true) {
+  if($('#calcTable1').is(":visible") === true) {
     return true;
   }
   else if($('#calcTable2').is(":visible") === true) {
@@ -8,10 +8,10 @@ function calcCheck() {
 }
 
 function backspace() {
-  if (calcCheck() === true) {
+  if(calcCheck() === true) {
     document.getElementById("ans1").value = document.getElementById("ans1").value.substr(0, document.getElementById("ans1").value.length - 1);
   }
-  else if (calcCheck() === false) {
+  else if(calcCheck() === false) {
     document.getElementById("ans2").value = document.getElementById("ans2").value.substr(0, document.getElementById("ans2").value.length - 1);
   }
 }
@@ -36,6 +36,7 @@ document.addEventListener('keypress', function(event) {
       document.getElementById("ans1").value = math.eval(document.getElementById("ans1").value);
     }
     else {
+      event.preventDefault();
       document.getElementById("ans1").value += String.fromCharCode(event.keyCode);
     }
   }
@@ -45,6 +46,7 @@ document.addEventListener('keypress', function(event) {
       document.getElementById("ans2").value = math.eval(document.getElementById("ans2").value);
     }
     else {
+      event.preventDefault()
       document.getElementById("ans2").value += String.fromCharCode(event.keyCode);
     }
   }
@@ -57,16 +59,20 @@ document.addEventListener('keydown', function(event) {
 });
 
 $(document).ready(function() {
-  $('#scientificButton').click(function() {
-    $('#calcTable1').show("fast");
-    $('#calcTable2').hide("fast");
-  });
   $('#standardButton').click(function() {
-    $('#calcTable1').hide("fast");
-    $('#calcTable2').show("fast");
+    $('#calcTable1').hide(400);
+    $('#calcTable2').show(400);
+  });
+  $('#scientificButton').click(function() {
+    $('#calcTable1').show(400);
+    $('#calcTable2').hide(400);
+  });
+  $('#formulaButton').click(function() {
+    $('#formulaBox').toggle(400);
   });
 });
 
 $(window).ready(function() {
   $('#calcTable1').hide();
+  $('#formulaBox').hide();
 });

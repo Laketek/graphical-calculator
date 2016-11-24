@@ -102,15 +102,39 @@ width: 250px;
 }
 
 #scientificTable {
+  z-index: 3;
   width: 450px;
   height: 350px;
   text-align: center;
 }
 
 #standardTable {
+  z-index: 3;
   width: 300px;
   height: 300px;
   text-align: center;
+}
+
+#formulaBox {
+  z-index: 2;
+  width: 485px;
+  height: 650px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: url('http://i.imgur.com/ytbsqKu.png') no-repeat center;
+  background-size: cover;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 60%; bottom: 0; right: 0;
+}
+
+#formulaButton {
+  z-index: 2;
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  top: 60%; left: 0; bottom: 0; right: 0;
 }
 
 .panel {
@@ -134,13 +158,11 @@ width: 250px;
     left: 0;
     height: 100%;
     width: 100%;
-
 }
 
 #back1 {
-    background: url("http://i.imgur.com/0hlSJaQ.png") no-repeat center;
+    background: url("http://i.imgur.com/P2C0cNP.png") no-repeat center;
     background-size: cover;
-
 }
 
 #back2 {
@@ -149,7 +171,7 @@ width: 250px;
 }
 
 #back3 {
-    background: url("http://i.imgur.com/8kiFrPw.png") no-repeat center;
+    background: url("http://i.imgur.com/r2QrAMK.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -199,35 +221,34 @@ width: 250px;
   }
 }
 #backgroundchange div:nth-of-type(1) {
-  animation-delay: 24s;
-  -webkit-animation-delay: 24s;
+  animation-delay: 28s;
+  -webkit-animation-delay: 28s;
 }
 #backgroundchange div:nth-of-type(2) {
-  animation-delay: 18s;
-  -webkit-animation-delay: 18s;
+  animation-delay: 21s;
+  -webkit-animation-delay: 21s;
 }
 #backgroundchange div:nth-of-type(3) {
-  animation-delay: 12s;
-  -webkit-animation-delay: 12s;
+  animation-delay: 14s;
+  -webkit-animation-delay: 14s;
 }
 #backgroundchange div:nth-of-type(4) {
-  animation-delay: 6s;
-  -webkit-animation-delay: 6s;
+  animation-delay: 7s;
+  -webkit-animation-delay: 7s;
 }
-
 #backgroundchange div:nth-of-type(5) {
-  animation-delay: 0;
-  -webkit-animation-delay: 0;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 
 #backgroundchange div {
 animation-name: backgroundchangeFadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
-animation-duration: 24s;
+animation-duration: 35s;
 
 -webkit-animation-name: backgroundchangeFadeInOut;
 -webkit-animation-timing-function: ease-in-out;
 -webkit-animation-iteration-count: infinite;
--webkit-animation-duration: 24s;
+-webkit-animation-duration: 35s;
 }
