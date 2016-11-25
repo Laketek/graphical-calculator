@@ -1,8 +1,13 @@
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   background-position: center;
   background-size: cover;
+}
+
+input[type="button"] {
+  outline: none;
 }
 
 input[class="button1"] {
@@ -19,6 +24,7 @@ input[class="button1"] {
 }
 
 input[class="button1"]:hover {
+  cursor: pointer;
   background-color: rgba(256, 256, 256, 0.4);
 }
 
@@ -49,6 +55,7 @@ input[class="button2"] {
 }
 
 input[class="button2"]:hover {
+  cursor: pointer;
   background-color: rgba(256, 256, 256, 0.4);
 }
 
@@ -134,7 +141,21 @@ width: 250px;
   height: 50px;
   margin: auto;
   position: absolute;
-  top: 60%; left: 0; bottom: 0; right: 0;
+  top: 0%; left: 85%; bottom: 85%; right: 0;
+}
+
+#gitLinkBox {
+  height: 50px;
+  width: 150px;
+  z-index: 2;
+  margin: auto;
+  position: absolute;
+  top: 85%; left: 85%; bottom: 0; right: 0;
+}
+
+#gitLinkButton {
+  height: 50px;
+  width: 150px;
 }
 
 .panel {
