@@ -1,2 +1,2 @@
-# graphical-calculator
+# graphical.calculator
 Graphical calculator, college work
