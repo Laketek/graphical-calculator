@@ -1,12 +1,11 @@
 function calcCheck() {
-  if($('#calcTable1').is(":visible") === true) {
+  if($('#calcTable1').is(":visible") === true && $('#calcTable2').is(":visible") === false) {
     return true;
   }
-  else if($('#calcTable2').is(":visible") === true) {
+  else if($('#calcTable2').is(":visible") === true && $('#calcTable1').is(":visible") === false) {
     return false;
   }
 }
-
 function backspace() {
   if(calcCheck() === true) {
     document.getElementById("ans1").value = document.getElementById("ans1").value.substr(0, document.getElementById("ans1").value.length - 1);
@@ -15,7 +14,6 @@ function backspace() {
     document.getElementById("ans2").value = document.getElementById("ans2").value.substr(0, document.getElementById("ans2").value.length - 1);
   }
 }
-
 function evalAnswer() {
   if(calcCheck() === true) {
     if(document.getElementById("ans1").value.length > 0) {
@@ -28,7 +26,6 @@ function evalAnswer() {
     }
   }
 }
-
 document.addEventListener('keypress', function(event) {
   if(calcCheck() === true) {
     if(event.which === 13) {
@@ -46,18 +43,16 @@ document.addEventListener('keypress', function(event) {
       document.getElementById("ans2").value = math.eval(document.getElementById("ans2").value);
     }
     else {
-      event.preventDefault()
+      event.preventDefault();
       document.getElementById("ans2").value += String.fromCharCode(event.keyCode);
     }
   }
 });
-
 document.addEventListener('keydown', function(event) {
   if(event.which === 8) {
     backspace();
   }
 });
-
 $(document).ready(function() {
   $('#standardButton').click(function() {
     $('#calcTable1').hide(400);
@@ -68,10 +63,9 @@ $(document).ready(function() {
     $('#calcTable2').hide(400);
   });
   $('#formulaButton').click(function() {
-    $('#formulaBox').toggle(400);
+    $('#formulaBox').toggle({percent: 100, direction: 'horizontal'}, 400);
   });
 });
-
 $(window).ready(function() {
   $('#calcTable1').hide();
   $('#formulaBox').hide();
